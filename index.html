@@ -1,0 +1,47 @@
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>IleZapace</title>
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+	<script src="script.js"></script>
+	<div id="container">
+		<div id="menu" class="menu">
+			<form action="">
+				<div id="firstMenu">
+					<div class="radioDiv">
+						<div class="radioElem"><input class="radio" id="option1" type="radio" name="trasa" value="one" checked><span id="option1Txt" class="optionTxt">W jedną stronę</span></div>
+						<div class="radioElem"><input class="radio" id="option2" type="radio" name="trasa" value="two"> <span id="option2Txt" class="optionTxt">W dwie strony</span></div>
+					</div>
+					<div class="forma">
+						<input type="text" id="od" value="" placeholder="Początek" autocomplete="on">
+						<input type="text" id="do" value="" placeholder="Koniec">
+						<input type="text" id="cena" value="" placeholder="Cena z litr">
+						<input type="text" id="litry" value="" placeholder="Spalanie">
+					</div>
+				</div>
+				<div id="secondMenu">
+					<div class="forma">
+						<div id="info" class="info">Ładuję</div>
+						<div id="info2" class="info">Ładuję</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<button type="button" class="btn-info mapBtn" id="searchBtn"><i class="fas fa-search"></i></button>
+		<button type="button" class="btn-info mapBtn" id="reverseBtn"><i class="fas fa-undo-alt"></i></button>
+		<button type="button" class="btn-info mapBtn showMenuBtn" id="showMenuBtn"><i id="showMenuBtnAnim" class='fas fa-angle-double-up'></i></button>
+		<div id="map"></div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl1SsuLvNCx1ILDIMSiGmr_RcjXboLgZk&libraries=places&callback=initMap" async defer></script>
+</body>
+
+</html>
